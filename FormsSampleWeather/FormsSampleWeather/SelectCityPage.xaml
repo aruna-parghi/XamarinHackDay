@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormsSampleWeather.SelectCityPage">
+	<StackLayout>
+        <Image Source="Sydney.jpg" WidthRequest="200" HeightRequest="200">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding SelectCity}" CommandParameter="Sydney"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <Image Source="Melbourne.jpg" WidthRequest="200" HeightRequest="200">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding SelectCity}" CommandParameter="Melbourne"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <Image Source="Brisbane.jpg" WidthRequest="200" HeightRequest="200">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding SelectCity}" CommandParameter="Brisbane"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <!--<Button Text="View Sydney Weather" Command="{Binding SelectCity}" CommandParameter="Sydney"></Button>-->
+    </StackLayout>
+</ContentPage>

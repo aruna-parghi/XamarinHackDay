@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormsSampleWeather.ViewWeatherPage" BackgroundImage="{Binding CityImage}">
+    <StackLayout>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+             <Label FontSize="40" TextColor="White" Text="Weather @ Xamarin Hack Day"></Label>
+        </StackLayout>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label FontSize="24" FontAttributes="Bold" TextColor="White" Text="{Binding City}"></Label>
+            <Label FontSize="24" TextColor="White" Text="{Binding Temperature}"></Label>
+            <Label FontSize="24" TextColor="White" Text="{Binding longitude}"></Label>
+            <Label FontSize="24" TextColor="White" Text="{Binding latitude}"></Label>
+            <Label FontSize="24" TextColor="White" Text="{Binding Humidity}"></Label>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
